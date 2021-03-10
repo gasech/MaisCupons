@@ -5,9 +5,60 @@
     <artifactId>maisCupons</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
+    <organization>
+        <name>Senac TADS PI3 2021-1</name>
+    </organization>
+    
+    <developers>
+        <developer>
+            <id></id>
+            <name>Bianca Santos Dias</name>
+            <email></email>
+        </developer>
+        <developer>
+            <id>gasech</id>
+            <name>Gabriel Sechaus</name>
+            <email>gsechaus@gmail.com</email>
+        </developer>
+        <developer>
+            <id></id>
+            <name>João Pedro Dantas</name>
+            <email></email>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Lana Morgado Martinez</name>
+            <email></email>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Patricia Faustino Ferreira</name>
+            <email></email>
+        </developer>
+        <developer>
+            <id></id>
+            <name>Yuri Aureliano Cardoso</name>
+            <email></email>
+        </developer>
+    </developers>
+     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
     </properties>
+    
+    <dependencies>
+        <dependency> <!-- JDBC CONNECTOR -->
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.23</version>
+        </dependency>
+        <dependency> <!-- APACHE COMMONS LANG -->
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.11</version>
+        </dependency>
+    </dependencies>
 </project>
