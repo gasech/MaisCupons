@@ -1,0 +1,67 @@
+.botoes {
+
+	padding-left: 10px;
+    padding-right: 10px;
+	padding-top: 25px;
+	background: red;
+
+	height: 100px;
+	color: silver;
+ 	
+
+}
+
+h2	{
+	color: black;
+	padding-top: 20px;
+	text-align: center;
+}
+
+h3	{
+	color: black;
+	padding-top: 20px;
+	text-align: center;
+}
+
+            .medio {
+
+
+            	font-weight: bold;
+
+                width: 16%;
+                color: black;
+                background: white;
+                height: 50px;
+            }
+
+
+            .paragrafo{
+
+            	color: black;
+            	padding-top: 15px;
+
+            	padding-left: 20px;
+    			padding-right: 20px;
+    			font-style: italic;
+    			font-weight: bold;
+    			font-size: 20px;
+
+            }
+
+
+	/*<div class="container-fluid">
+<ul class="nav nav-bordered">
+  <li class="nav-item">
+    <a class="nav-link active" href="#" style="color:#00FFFF">Descrição</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" style="color:#00FFFF">Relação com a covid</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" style="color:#00FFFF">Perfil de usuários</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" style="color:#00FFFF">Principais funcionalidades</a>
+  </li>
+</ul>
+</div>*/
