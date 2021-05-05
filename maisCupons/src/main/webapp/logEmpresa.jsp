@@ -25,7 +25,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="C:\Users\Yuri\Downloads/kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
+                    <img src="kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
                     +Cupons
                 </a>
             </div>
@@ -43,8 +43,8 @@
                 <input type="password" id="senhaid" name="senha" placeholder="Digite sua senha"required>
 
             </div>
-            <a href="telaEmpresa.html"><button type="button" class="btn btn-warning medio" >Entrar</button >
-                <a href="cadastroEmpresa.html"><button type="button" class="btn btn-warning medio" >Cadastrar Empresa</button ></a>
+            <a href="telaEmpresa.jsp"><button type="button" class="btn btn-warning medio" >Entrar</button >
+                <a href="cadastroEmpresa.jsp"><button type="button" class="btn btn-warning medio" >Cadastrar empresa</button ></a>
 
         </form>
     </body>

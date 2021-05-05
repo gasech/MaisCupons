@@ -38,15 +38,15 @@
 
             <div class="fieldUsuario">
                 <label for="email">Email:</label>
-                <input type="email" id="emailid" name="email" placeholder="Digite seu Email"required>
+                <input type="email" id="emailid" name="email" placeholder="Digite seu email"required>
             </div>
 
             <div class="fieldUsuario">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senhaid" name="senha" placeholder="Digite sua "required>
+                <input type="password" id="senhaid" name="senha" placeholder="Digite sua senha "required>
             </div>
 
-            <a href="index.html"><button type="submit" class="btn btn-warning medio" >Cadastrar</button > </a>
+            <a href="index.jsp"><button type="submit" class="btn btn-warning medio" >Cadastrar empresa</button > </a>
         </form>
 
     </body>

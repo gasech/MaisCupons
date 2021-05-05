@@ -1,6 +1,6 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Start Page</title>
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="C:\Users\Yuri\Downloads/kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
+                    <img src="kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
                     +Cupons
                 </a>
             </div>
@@ -27,8 +27,8 @@
         <form action="exibicao.php" class="formularioLogin" method="post"> 
 
 
-            <a href="loginusuario.html"><button type="button" class="btn btn-warning medio" >Usuário</button > </a>
-            <a href="login.html"> <button type="button" class="btn btn-danger medio" >Empresa</button > </a>
+            <a href="logUsuario.jsp"><button type="button" class="btn btn-warning medio" >Usuário</button > </a>
+            <a href="logEmpresa.jsp"> <button type="button" class="btn btn-danger medio" >Empresa</button > </a>
 
 
         </form>

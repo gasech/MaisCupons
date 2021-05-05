@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -19,7 +20,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="C:\Users\Yuri\Downloads/kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
+                    <img src="kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
                     +Cupons
                 </a>
             </div>
@@ -38,7 +39,7 @@
 
             </div>
             <a><button type="button" class="btn btn-warning medio" >Entrar</button >
-                <a href="cadastroUsuario.html"><button type="button" class="btn btn-warning medio" >Cadastro</button ></a>
+                <a href="cadastroUsuario.jsp"><button type="button" class="btn btn-warning medio" >Cadastrar usuario</button ></a>
 
         </form>
     </body>

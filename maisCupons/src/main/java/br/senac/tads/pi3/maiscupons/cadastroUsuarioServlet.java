@@ -48,7 +48,7 @@ public class cadastroUsuarioServlet extends HttpServlet {
             e.printStackTrace();
         }
         
-        response.sendRedirect("/MaisCupons/index.html");
+        response.sendRedirect("/MaisCupons/index.jsp");
     }
 
     

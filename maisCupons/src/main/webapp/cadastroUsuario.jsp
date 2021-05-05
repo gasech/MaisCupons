@@ -47,7 +47,7 @@
                 <input type="password" id="senhaid" name="senha" placeholder="Digite sua senha "required>
             </div>
 
-            <a href="index.html"><button type="submit" class="btn btn-warning medio" >Cadastrar</button > </a>
+            <a href="index.jsp"><button type="submit" class="btn btn-warning medio" >Cadastrar usuario</button > </a>
         </form>
 
     </body>
