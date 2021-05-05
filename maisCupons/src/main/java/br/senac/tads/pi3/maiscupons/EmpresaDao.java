@@ -11,34 +11,32 @@ import java.sql.SQLException;
  */
 public class EmpresaDao {
     
+    private final ConnectionUtils connectionUtils = new ConnectionUtils();
     
     public int cadastrarEmpresa(Empresa empresa) throws ClassNotFoundException, SQLException {
         String INSERT_USERS_SQL = "INSERT INTO cadastro_empresa" +
-            "  (id,nome, cnpj, telefone, email, senha) VALUES " +
-            " (?,?, ?, ?, ?, ?);";
+            "  (nome, cnpj, telefone, email, senha) VALUES " +
+            " (?, ?, ?, ?, ?);";
 
         int resultado = 0;
 
         Class.forName("com.mysql.jdbc.Driver");
 
-        try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/?user=root");
+        try (Connection connection = connectionUtils.obterConexaoBD();
 
-            // Step 2:Create a statement using connection object
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, empresa.getNome());
-            preparedStatement.setString(3, empresa.getCnpj());
-            preparedStatement.setString(4, empresa.getTelefone());
-            preparedStatement.setString(5, empresa.getEmail());
-            preparedStatement.setString(6, empresa.getSenha());
+            preparedStatement.setString(1, empresa.getNome());
+            preparedStatement.setString(2, empresa.getCnpj());
+            preparedStatement.setString(3, empresa.getTelefone());
+            preparedStatement.setString(4, empresa.getEmail());
+            preparedStatement.setString(5, empresa.getSenha());
             
             System.out.println(preparedStatement);
-            // Step 3: Execute the query or update query
+            
             resultado = preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            // process sql exception
+           
             printSQLException(e);
         }
         return resultado;

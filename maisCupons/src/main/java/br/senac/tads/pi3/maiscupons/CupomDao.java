@@ -16,32 +16,31 @@ import java.sql.SQLException;
  */
 public class CupomDao {
     
+    private final ConnectionUtils connectionUtils = new ConnectionUtils();
+    
     public int cadastrarCupom(Cupom cupom) throws ClassNotFoundException, SQLException {
         String INSERT_USERS_SQL = "INSERT INTO cadastro_cupom" +
-            "  (id,nome, departamento, desconto) VALUES " +
-            " (?,?,?,?);";
+            "  (nome, departamento, desconto) VALUES " +
+            " (?,?,?);";
 
         int resultado = 0;
 
         Class.forName("com.mysql.jdbc.Driver");
 
-        try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/?user=root");
+        try (Connection connection = connectionUtils.obterConexaoBD();
 
-            // Step 2:Create a statement using connection object
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, cupom.getNome());
-            preparedStatement.setString(3, cupom.getDepartamento());
-            preparedStatement.setString(4, cupom.getDesconto());
+            preparedStatement.setString(1, cupom.getNome());
+            preparedStatement.setString(2, cupom.getDepartamento());
+            preparedStatement.setString(3, cupom.getDesconto());
             
             
             System.out.println(preparedStatement);
-            // Step 3: Execute the query or update query
+
             resultado = preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            // process sql exception
+            
             printSQLException(e);
         }
         return resultado;
