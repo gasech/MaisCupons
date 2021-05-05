@@ -1,11 +1,6 @@
-<%-- 
-    Document   : cadastroCupom
-    Created on : 3 de mai de 2021, 21:09:54
-    Author     : Yuri
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -20,9 +15,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="persona.css">
+        
     </head>
     <body>
-        <form action="exibicao.php" class="formularioEmpresa" method="post"> 
+        <form action="<%= request.getContextPath() %>/cadastroCupomServlet" class="formularioEmpresa" method="post"> 
             <p> Cadastro Cupom</p>
 
             <div class="field">
