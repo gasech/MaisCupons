@@ -3,7 +3,7 @@
 
 <html>
     <head>
-        <title>Cadastro Usuario</title>
+        <title>Cadastro do usuario</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -47,7 +47,7 @@
                 <input type="password" id="senhaid" name="senha" placeholder="Digite sua senha "required>
             </div>
 
-            <a href="index.jsp"><button type="submit" class="btn btn-warning medio" >Cadastrar usuario</button > </a>
+            <a href="logUsuario.jsp"><button type="submit" class="btn btn-warning medio" >Cadastrar usuario</button > </a>
         </form>
 
     </body>

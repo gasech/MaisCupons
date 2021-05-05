@@ -43,7 +43,7 @@ public class cadastroCupomServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        response.sendRedirect("/MaisCupons/index.jsp");
+        response.sendRedirect("/MaisCupons/telaEmpresa.jsp");
     }
 }
 

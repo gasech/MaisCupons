@@ -1,14 +1,9 @@
-<%-- 
-    Document   : logEmpresa
-    Created on : 3 de mai de 2021, 21:06:58
-    Author     : Yuri
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>Login</title>
+        <title>Login da empresa</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -30,7 +25,7 @@
                 </a>
             </div>
         </nav>
-        <form action="exibicao.php" class="formularioLogin1" method="post"> 
+        <form action="<%= request.getContextPath() %>/logEmpresaServlet" class="formularioLogin1" method="post"> 
             <p> Login Empresa</p>
 
             <div class="field">
@@ -43,7 +38,7 @@
                 <input type="password" id="senhaid" name="senha" placeholder="Digite sua senha"required>
 
             </div>
-            <a href="telaEmpresa.jsp"><button type="button" class="btn btn-warning medio" >Entrar</button >
+            <a><button type="submit" class="btn btn-warning medio" >Entrar</button >
                 <a href="cadastroEmpresa.jsp"><button type="button" class="btn btn-warning medio" >Cadastrar empresa</button ></a>
 
         </form>
