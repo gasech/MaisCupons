@@ -26,6 +26,7 @@
         </nav>
         <form action="exibicao.php" class="formularioLogin" method="post"> 
             <a href="cadastroCupom.jsp"><button type="button" class="btn btn-warning medio" >Cadastrar Cupom</button > </a>
+            <a href="solicitacaoEmpresa.jsp"> <button type="button" class="btn btn-danger medio" >Abrir Solicitação</button > </a>
         </form>
 
     </body>

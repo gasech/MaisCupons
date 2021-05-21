@@ -15,39 +15,37 @@ import java.sql.SQLException;
  * @author Bianca
  */
 public class CupomDao {
-    
+
     private final ConnectionUtils connectionUtils = new ConnectionUtils();
-    
+
     public int cadastrarCupom(Cupom cupom) throws ClassNotFoundException, SQLException {
-        String INSERT_USERS_SQL = "INSERT INTO cadastro_cupom" +
-            "  (nome, departamento, desconto) VALUES " +
-            " (?,?,?);";
+
+        String INSERT_USERS_SQL = "INSERT INTO cadastro_cupom"
+                + "  (nome, departamento, desconto) VALUES "
+                + " (?,?,?);";
 
         int resultado = 0;
 
         Class.forName("com.mysql.jdbc.Driver");
 
-        try (Connection connection = connectionUtils.obterConexaoBD();
-
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
+        try ( Connection connection = connectionUtils.obterConexaoBD();  PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setString(1, cupom.getNome());
             preparedStatement.setString(2, cupom.getDepartamento());
             preparedStatement.setString(3, cupom.getDesconto());
-            
-            
+
             System.out.println(preparedStatement);
 
             resultado = preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            
+
             printSQLException(e);
         }
         return resultado;
     }
 
     private void printSQLException(SQLException ex) {
-        for (Throwable e: ex) {
+        for (Throwable e : ex) {
             if (e instanceof SQLException) {
                 e.printStackTrace(System.err);
                 System.err.println("SQLState: " + ((SQLException) e).getSQLState());
@@ -61,5 +59,5 @@ public class CupomDao {
             }
         }
     }
-    
+
 }
