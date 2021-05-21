@@ -17,8 +17,15 @@
         <link rel="stylesheet" type="text/css" href="persona.css">
     </head>
     <body>
-        <h1>+Cupons</h1> 
-        <form action="<%= request.getContextPath() %>/cadastroEmpresaServlet_1" method="post"class="formularioUsuario">  
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="kisspng-computer-icons-coupon-voucher-coupon-vector-5adc48be56bb86.7091344415243859823553.png" alt="" width="40" height="34" class="d-inline-block align-text-center">
+                    +Cupons
+                </a>
+            </div>
+        </nav>
+        <form action="<%= request.getContextPath()%>/cadastroEmpresaServlet_1" method="post"class="formularioUsuario">  
             <p class="fonteUsuario"> Cadastro de empresa</p>
 
             <div class="fieldUsuario">

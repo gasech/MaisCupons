@@ -26,6 +26,7 @@
         </nav>
         <form action="" class="formularioLogin" method="post"> 
             <a href="procurarCupom.jsp"><button type="button" class="btn btn-warning medio" >Procurar Cupom</button > </a>
+            <a href="carteiraCashback.jsp"> <button type="button" class="btn btn-danger medio" >Carteira CashBack</button > </a>
             <a href="solicitacaoUsuario.jsp"> <button type="button" class="btn btn-danger medio" >Abrir Solicitação</button > </a>
         </form>
 
