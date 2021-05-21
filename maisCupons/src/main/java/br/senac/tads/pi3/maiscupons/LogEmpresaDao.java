@@ -19,7 +19,8 @@ public class LogEmpresaDao {
 
         Class.forName("com.mysql.jdbc.Driver");
 
-        try ( Connection connection = connectionUtils.obterConexaoBD();  PreparedStatement preparedStatement = connection.prepareStatement("select * from cadastro_empresa where email = ? and senha = ? ")) {
+        try ( Connection connection = connectionUtils.obterConexaoBD();  
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from cadastro_empresa where email = ? and senha = ? ")) {
             preparedStatement.setString(1, logEmpresaBean.getEmail());
             preparedStatement.setString(2, logEmpresaBean.getSenha());
 
