@@ -16,7 +16,7 @@ CREATE TABLE cadastro_usuario (
   telefone int NOT NULL,
   email varchar(100) NOT NULL,
   senha varchar(40) NOT NULL,
-  saldo int not null,
+  saldo int NOT NULL
 );
 
 -- Tabela das Empresas
@@ -52,4 +52,13 @@ CREATE TABLE solicitacao_empresa(
   cnpj bigint NOT NULL,
   mensagem varchar(100) NOT NULL 
 );
+
+select * from cadastro_cupom;
+select * from cadastro_empresa;
+select * from cadastro_usuario;
+select * from solicitacao_empresa;
+select * from solicitacao_usuario;
+
+
+
   
