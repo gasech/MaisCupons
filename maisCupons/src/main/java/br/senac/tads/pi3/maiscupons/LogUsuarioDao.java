@@ -5,10 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author Bianca
- */
 public class LogUsuarioDao {
 
     private final ConnectionUtils connectionUtils = new ConnectionUtils();
