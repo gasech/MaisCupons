@@ -16,7 +16,7 @@ CREATE TABLE cadastro_usuario (
   telefone int NOT NULL,
   email varchar(100) NOT NULL,
   senha varchar(40) NOT NULL,
-  saldo int NOT NULL
+  saldo int DEFAULT '0'
 );
 
 -- Tabela das Empresas
